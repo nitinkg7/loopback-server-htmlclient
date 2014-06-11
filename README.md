@@ -21,6 +21,7 @@ open a new command prompt and type below commands
 Now the db is up and running.
 Now move to node.js command prompt and type below cmds:
 1.cd C:\Users\SAURABH\Desktop\myworkspace\loopbackserver
+2.npm install (install dependencies)
 2.slc run
 application is running now which you can access from localhost:3000 in your browser
 insert the new user details and you can see the json after it is submitted successfully with object id.
