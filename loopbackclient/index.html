@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<HTML> 
+<HEAD> 
+<TITLE>Loopback Application</TITLE> 
+</HEAD> 
+<BODY> 
+<div>
+<H1>This is my first application on node.js</H1>
+<H2>Server is a node.js loopback application with mongodb and client uses html/jquery/ajax.</H2> 
+<P>It was fun learning this new technology. Came to know about many technologies.</P>
+<p>We will be retrieving data from mongodb and showing it in s table on this page on startup and submitting some data on mongodb as well using form. 
+</div>
+<div>
+<div style="width:50%;float:left;margin-right:30px">
+<TABLE id="userlist" name="userlist" BORDER="5px"   WIDTH="100%"   CELLPADDING="4" CELLSPACING="3">
+   <TR>
+      <TH COLSPAN="3"><BR><H3>User Details</H3>
+      </TH>
+   </TR>
+   <TR>
+      <TH>Username</TH>
+      <TH>Email</TH>
+	  <TH>CONTACT</TH>
+   </TR>
+   <tbody>
+  
+   </tbody>
+</TABLE>
+</div>
+<div style="width:30%;float:left">
+  <div >
+    <form id="formadduser" method="post" action="/api/userdetails" >
+	  <p align="center" font="bold" >Add new user</p>
+      <p align="center">
+        <input name="username" type="text"  placeholder="User Name" id="username" />
+      </p>
+      
+      <p align="center">
+        <input name="email" type="text" id="email" placeholder="Email" />
+      </p>
+	  <p align="center">
+        <input name="contact" type="text" id="contact" placeholder="Contact" />
+      </p>
+      <div align="center">
+        <input type="submit" value="Submit" id="button-blue"/>
+      </div>
+    </form>
+  </div>
+  </div>
+<div>
+<script language="javascript" type="text/javascript" src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js'></script>
+<script language="javascript" type="text/javascript" src='userlist.js'/></script>
+</BODY> 
+</HTML>
